@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <div>
+        <div class="container" id="container">
+            <div class="leftside">
+                <div class="header">
+                    <h1>TABLES</h1>
+                </div>
+                <div class="tableSearch" style="text-align: center">
+                    <input type="text" id="searchTables" placeholder="Search Tables">
+                </div>
+                <div class="tablelist" id="TableConatiner"></div>
+            </div>
+            <div class="rightside" id="rightside">
+                <div class="header">
+                    <h1>MENU</h1>
+                </div>
+                <div class="tableSearch" style="text-align: center;">
+                    <input type="text" id="searchItems" placeholder="Search Food by any category">
+                </div>
+                <div class="itemslist" id="ItemsContainer"></div>
+            </div>
+        </div>
+        <div class="OrderDetails" id="OrderDetails">
+            <div class="BillHeader">
+                <span class="CloseBill" onclick="closeOrderDetails()">&times;</span>
+                <h2 id="OrderDetailsHeader" class="OrderDetailsHeader">Table | Order Details</h2>
+            </div> 
+            <div class="ItemDetails">
+                <table id="OrderedItems" class="OrderedItems">
+                        <thead class="OrderItemHeader">
+                            <th id="sno">S.No</th>
+                            <th id="itemname">Item</th>
+                            <th id="price">Price</th>
+                            <th id="quantity">No of Servings</th>
+                            <th id="delete"></th>
+                            <th id= "itemId" class="hidden"></th>
+                        </thead>
+                        <tbody id ="OrderItemBody" class="OrderItemBody"></tbody>
+                    
+                </table>
+                <h2 id="OrderItemBill">Total :</h2>
+            </div>
+            <button id="generatebill">Close Session(Generate Bill)</button>
+        </div>
+
+        <script src="data.js"></script>
+</body>
+
+</html>

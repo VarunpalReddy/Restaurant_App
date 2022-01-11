@@ -1,0 +1,84 @@
+.container
+{
+    opacity: 1;
+}
+.leftside
+{
+    float: left;
+    width: 20%;
+
+}
+.rightside
+{
+    float: right;
+    width: 70%;
+    border-left: 2px black solid ;
+    height: 100vh;
+}
+.header
+{
+    text-align: center;
+    margin : 20px 30px 30px 30px;
+}
+
+input[type=text] {
+    width: 60%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    align-items: center;
+    align-self: center;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    margin-left: 15%;
+}
+
+.Table
+{
+    border-bottom: 1px solid #7A7A7A;
+    border-left: 1px solid #7A7A7A;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.Item
+{
+    border-bottom: 1px solid #7A7A7A;
+    border-left: 1px solid #7A7A7A;
+    padding-left: 5%;
+    margin-left:5px;
+}
+.dragover
+{
+    opacity: inherit;
+}
+.OrderDetails {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1; 
+    left: 20%;
+    top: 20%;
+    width: 50%; 
+    height: 50%; 
+    overflow: auto;
+    background-color: white;
+    border: solid;
+}
+.CloseBill {
+    color: #292929;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 4px 6px 4px 6px;
+}
+.OrderItemBill{
+    margin: 25px;
+    margin-top: 30px;
+}
+.OrderedItems{
+    width:100%;
+    margin-top: 10px;
+}
+td{
+    text-align: center;
+}
